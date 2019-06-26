@@ -1,6 +1,7 @@
 from numpy import *  # 不推荐
 import matplotlib.pyplot as plt
 from numpy.random import rand
+import numpy as np
 
 # 1. 安装 Numpy
 # conda install numpy
@@ -13,7 +14,10 @@ print(a + 1)
 
 # 3. b = [4, 5, 6, 7]，使用 Numpy 将 a 和 b 对应元素相加
 b = [4, 5, 6, 7]
+print(b)
 # b=array(b)
+print(type(a))
+print(type(b))
 print(a + b)
 
 # 4. 将 a 转换为 2×2 的二维数组
@@ -116,11 +120,11 @@ print(a.diagonal(offset=1))
 print(a.diagonal(offset=2))
 print(a.diagonal(offset=-2))
 
-
+print(".........................................................................")
 a = array([[0, 1, 2, 3], [4, 5, 6, 7], [4, 5, 6, 7]])
 
 # 21. 求 a 的基本属性：数据类型/形状/元素数目/一个元素&所有元素占用字节/维度
-print(a.dtype)
+print(a.dtype)  # int32
 print(a.shape)
 print(a.size)
 print(a.itemsize)
